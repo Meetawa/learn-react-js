@@ -1,24 +1,11 @@
-import Header from './component/Header';
-import Footer from './component/Footer';
-import UseStateHooks from './component/UseStateHooks';
-import { useState } from 'react';
+import React from 'react'
 
-function App() {
-  const [state, setState]=useState("rahulsaini");
-  const fun=()=>{
-    setState("hari singh saini");
-    console.log(state);
-  }
-
+const App = () => {
   return (
-    <div className="App">
-      <Header text="rahulsaini" />
-      <UseStateHooks item={state}
-      fun={fun}
-       />
-      <Footer />
+    <div>
+      
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
