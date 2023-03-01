@@ -6,16 +6,19 @@
     
     Prop Drilling:    
     -Prop drilling is basically a situation when the same data is being sent at almost every level due to requirements in the final level
+
+    Example:  Child A to Child C name transfer data or sharing the data
 */
 import React from 'react'
+import ChildB from './ChildB'
 
-const ChildA = () => {
-    
+const ChildA = ({name}) => {
   return (
-    <div>
-      
-    </div>
+    <main>
+    <h1>name A is :{name}</h1>
+    <ChildB name ={name} />
+    </main>
   )
 }
 
-export default ChildA
+export default ChildA;
