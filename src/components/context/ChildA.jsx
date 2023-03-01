@@ -12,12 +12,11 @@
 import React from 'react'
 import ChildB from './ChildB'
 
-const ChildA = ({name}) => {
+const ChildA = () => {
   return (
-    <main>
-    <h1>name A is :{name}</h1>
-    <ChildB name ={name} />
-    </main>
+    <>
+    <ChildB />
+    </>
   )
 }
 

@@ -12,21 +12,26 @@
     - if need to sharing the data in a component  then we need 3 terms :
         -create : we need to create a Context React.createContext()
         -provider : Provider is a component that as it's names suggests provides the state to its children
-        -consumer :  Consumer as it so happens is a component that consumes and uses the state
+            -we need  pass 'value={} '
+        -consumer :  Consumer as it so happens is a component that consumes and uses the state and its only accept function and also say only consume functions
    
  */
-import React from 'react'
+import React, { createContext } from 'react'
 import ChildA from './ChildA';
 
-const ContextAPI = () => {
-    const name="rahulsaini"; //suppose this name is required in childA,childB,childC components then we need PROPS DRILLING
+const Data=createContext();//Creating
+function ContextAPI() {
+   const name="Rahu";//suppose this name is required in childA,childB,childC components then we need PROPS DRILLING
     return (
-      <div>
-        <ChildA name={name}/>
-      </div>
+        <>
+      <Data.Provider value={name}>
+        <ChildA />
+      </Data.Provider>
+      </>
     )
 }
 
 export default ContextAPI;
+export {Data};
 
         

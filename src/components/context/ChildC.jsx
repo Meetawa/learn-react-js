@@ -1,10 +1,19 @@
 import React from 'react'
-
-const ChildC = ({name}) => {
+import { Data } from './ContextAPI';
+const ChildC = () => {
   return (
-    <div>
-      <h3>name C  is :{name}</h3>
-    </div>
+   <>
+   <Data.Consumer> 
+    {
+    (name)=>{
+      console.log(name)
+     return (
+     <h1> my name is {name}</h1>
+     )
+    }
+  }
+   </Data.Consumer>
+   </>
   )
 }
 
