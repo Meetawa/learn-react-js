@@ -1,14 +1,15 @@
 import React from 'react'
-import ChildA from './components/propsdrilling/ChildA';
 import './App.css'
+import ContextAPI from './components/context/ContextAPI'
+import PropsDrilling from './components/propsdrilling/PropsDrilling'
 
 const App = () => {
-  const name="rahulsaini"; //suppose this name is required in childA,childB,childC components then we need PROPS DRILLING
   return (
-    <div>
-      <ChildA name={name}/>
-    </div>
+    <>
+      <PropsDrilling />
+      <ContextAPI />
+    </>
   )
 }
 
-export default App
+export default App;
