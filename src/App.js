@@ -1,13 +1,11 @@
 import React from 'react'
 import './App.css'
-import ContextAPI from './components/context/ContextAPI'
-import PropsDrilling from './components/propsdrilling/PropsDrilling'
+import UseContext from './components/hooks/usecontext/UseContext'
 
 const App = () => {
   return (
     <>
-      <PropsDrilling />
-      <ContextAPI />
+     <UseContext />
     </>
   )
 }
