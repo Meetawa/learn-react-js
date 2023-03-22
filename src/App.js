@@ -1,13 +1,12 @@
-import React from 'react'
-import './App.css'
-import UseContext from './components/hooks/usecontext/UseContext'
+import React from "react";
+import ProfilePage from "./components/suspense/Suspense";
 
 const App = () => {
   return (
     <>
-     <UseContext />
+      <ProfilePage />
     </>
-  )
-}
+  );
+};
 
 export default App;
