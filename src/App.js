@@ -1,6 +1,5 @@
 import React from "react";
-import ProfilePage from "./components/suspense/Suspense";
-
+import ProfilePage from "./components/hooks/suspense/Suspense";
 const App = () => {
   return (
     <>
