@@ -1,9 +1,9 @@
 import React from "react";
-import ProfilePage from "./components/hooks/suspense/Suspense";
+import state from "./components/hooks/state and usestate/state";
 const App = () => {
   return (
     <>
-      <ProfilePage />
+      <state />
     </>
   );
 };
