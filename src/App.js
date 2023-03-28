@@ -1,9 +1,9 @@
 import React from "react";
-import state from "./components/hooks/state and usestate/state";
+import StateComponents from "./components/hooks/state and usestate/StateComponents";
 const App = () => {
   return (
     <>
-      <state />
+      <StateComponents />
     </>
   );
 };
