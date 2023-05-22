@@ -1,9 +1,9 @@
 import React from "react";
-import UseEffectComponents from "./components/hooks/state and usestate/UseEffectComponents";
+import ComponentIndex from "./ReactTopic/02_Components/ComponentIndex";
 const App = () => {
   return (
     <>
-      <UseEffectComponents />
+      <ComponentIndex />
     </>
   );
 };
