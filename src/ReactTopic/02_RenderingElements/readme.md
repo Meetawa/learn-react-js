@@ -56,3 +56,8 @@ setInterval(tick, 1000);
 ```
 
 - It calls root.render() every second from a setInterval() callback.
+
+### NOTE (Rendering)
+
+- please understand index.js file.
+- please understand these files which creating in this folder.
