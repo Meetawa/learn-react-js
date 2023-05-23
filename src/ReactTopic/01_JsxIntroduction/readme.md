@@ -8,10 +8,10 @@
 
 ### Embedding Expressions in JSX
 
--we declare a variable called name and then use it inside JSX by wrapping it in curly braces
+- we declare a variable called name and then use it inside JSX by wrapping it in curly braces
 
-Example :
+Example :<br/>
 const name = 'Josh Perez';
 const element = <h1>Hello, {name}</h1>;
 
-For example, 2 + 2, user.firstName, or formatName(user) are all valid JavaScript expressions
+For example<br/> 2 + 2, user.firstName, or formatName(user) are all valid JavaScript expressions
