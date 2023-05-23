@@ -17,21 +17,20 @@ const element = <tag> Hello, {name} </tag>;
 Example :<br/>
 
 - 2 + 2, user.firstName, or formatName(user) are all valid JavaScript expressions<br/>
-  function formatName(user) {
-  return user.firstName + ' ' + user.lastName;
-  }
+  function formatName(user) {<br/>
+  return user.firstName + ' ' + user.lastName;<br/>
+  }<br/>
+  const user = {<br/>
+  firstName: 'Harper',<br/>
+  lastName: 'Perez'<br/>
+  };<br/>
 
-const user = {
-firstName: 'Harper',
-lastName: 'Perez'
-};
+const element = (<br/>
 
-const element = (
-
-  <tag>
-    Hello, {formatName(user)}!
-  </tag>
-);
+<tag><br/>
+Hello, {formatName(user)}!<br/>
+</tag><br/>
+);<br/>
 
 - We split JSX over multiple lines for readability. While it isn’t required, when doing this, we also recommend wrapping it in parentheses to avoid the pitfalls of automatic semicolon insertion.
 
@@ -42,9 +41,9 @@ const element = (
 - This means that you can use JSX inside of if statements and for loops, assign it to variables, accept it as arguments, and return it from functions:
 
 Example : <br/>
-function getGreeting(user) {
-if (user) {
-return <tag>Hello, {formatName(user)}!</tag>;
-}
-return <tag>Hello, Stranger.</tag>;
-}
+function getGreeting(user) {<br/>
+if (user) {<br/>
+return <tag>Hello, {formatName(user)}!</tag>;<br/>
+}<br/>
+return <tag>Hello, Stranger.</tag>;<br/>
+}<br/>
