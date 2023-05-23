@@ -11,8 +11,10 @@
 - we declare a variable called name and then use it inside JSX by wrapping it in curly braces
 
 Example :<br/>
+<font color="green">
 const name = 'Josh Perez';<br/>
 const element = <tag> Hello, {name} </tag>;
+</font>
 
 Example :<br/>
 
