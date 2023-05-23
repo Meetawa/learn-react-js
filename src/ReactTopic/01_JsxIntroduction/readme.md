@@ -13,8 +13,8 @@
 Example :<br/>
 
 ```diff
-const name = 'Josh Perez';<br/>
-const element = <tag> Hello, {name} </tag>;
+const name = 'Josh Perez';
+const element = <h1> Hello, {name} </h1>;
 ```
 
 Example :<br/>
@@ -22,20 +22,16 @@ Example :<br/>
 - 2 + 2, user.firstName, or formatName(user) are all valid JavaScript expressions<br/>
 
 ```diff
-  function formatName(user) {<br/>
+  function formatName(user) {
   return user.firstName + ' ' + user.lastName;<br/>
-  }<br/>
-  const user = {<br/>
-  firstName: 'Harper',<br/>
-  lastName: 'Perez'<br/>
-  };<br/>
-
-const element = (<br/>
-
-<tag><br/>
-Hello, {formatName(user)}!<br/>
-</tag><br/>
-);<br/>
+  }
+  const user = {
+  firstName: 'Harper',
+  lastName: 'Perez'
+  };
+  const element = (
+ <h1>Hello, {formatName(user)}!</h1>
+ );
 ```
 
 - We split JSX over multiple lines for readability. While it isn’t required, when doing this, we also recommend wrapping it in parentheses to avoid the pitfalls of automatic semicolon insertion.
@@ -47,9 +43,12 @@ Hello, {formatName(user)}!<br/>
 - This means that you can use JSX inside of if statements and for loops, assign it to variables, accept it as arguments, and return it from functions:
 
 Example : <br/>
-function getGreeting(user) {<br/>
-if (user) {<br/>
-return <tag>Hello, {formatName(user)}!</tag>;<br/>
-}<br/>
-return <tag>Hello, Stranger.</tag>;<br/>
-}<br/>
+
+```diff
+    function getGreeting(user) {
+    if (user) {
+    return <h1>Hello, {formatName(user)}!</h1>;
+    }
+    return <h1>Hello, Stranger.</h1>;
+    }
+```
