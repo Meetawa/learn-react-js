@@ -23,7 +23,7 @@ Example :<br/>
 
 ```diff
   function formatName(user) {
-  return user.firstName + ' ' + user.lastName;<br/>
+  return user.firstName + ' ' + user.lastName;
   }
   const user = {
   firstName: 'Harper',
@@ -52,3 +52,26 @@ Example : <br/>
     return <h1>Hello, Stranger.</h1>;
     }
 ```
+
+### Specifying Attributes with JSX
+
+- You may use quotes to specify string literals as attributes:
+
+```diff
+    const element = <a href="https://www.reactjs.org"> link </a>;
+```
+
+- You may also use curly braces to embed a JavaScript expression in an attribute:
+
+```diff
+    const element = <img src={user.avatarUrl}></img>;
+
+```
+
+- Don’t put quotes around curly braces when embedding a JavaScript expression in an attribute. You should either use quotes (for string values) or curly braces (for expressions), but not both in the same attribute.
+
+### Warning:
+
+- Since JSX is closer to JavaScript than to HTML, React DOM uses camelCase property naming convention instead of HTML attribute names.
+
+- For example, class becomes className in JSX, and tabindex becomes tabIndex.
