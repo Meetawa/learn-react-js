@@ -2,11 +2,6 @@ import React from "react";
 
 //TODO : jsx is way where we add html contain such as tag ,attributes and entities are used in react component without any import file so this jsx is very useful for creating single page application
 /* 
-  Some Rules:
-  -In jsx,we  used html element inside the return statement ,we cannot use  inside function statement
-  -In return statement we also used javascript things using  flowerbraket{....}
-  -In jsx we need add lot of html tag then, we add into a div tag like (<div>.........</div>) and blank tage like (<>..............</>) .... are  different tags  so we need a parent element in jsx
-
   Example:
 
   const IndexJsx = () => {
