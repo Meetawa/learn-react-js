@@ -36,4 +36,10 @@ class Car extends React.Component {
 }
 ```
 
+### More About Class C.
+
+#### Class
+
+- A "Class" in Javascript is a blueprint for creating objects that have the same properties and access to the same methods
+
 so,Header,Content,Footer are react components where we defined my function inside.
