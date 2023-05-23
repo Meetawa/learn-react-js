@@ -11,7 +11,7 @@
 - we declare a variable called name and then use it inside JSX by wrapping it in curly braces
 
 Example :<br/>
-const name = 'Josh Perez';
-const element = <h1>Hello, {name}</h1>;
+const name = 'Josh Perez';<br/>
+const element = <h1 tag>Hello, {name}</h1 tag>;
 
 For example<br/> 2 + 2, user.firstName, or formatName(user) are all valid JavaScript expressions
