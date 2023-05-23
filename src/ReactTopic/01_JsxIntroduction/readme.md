@@ -12,6 +12,6 @@
 
 Example :<br/>
 const name = 'Josh Perez';<br/>
-const element = <h1 tag>Hello, {name}</h1 tag>;
+const element = <tag> Hello, {name} </tag>;
 
 For example<br/> 2 + 2, user.firstName, or formatName(user) are all valid JavaScript expressions
