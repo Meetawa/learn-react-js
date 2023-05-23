@@ -1,9 +1,9 @@
 import React from "react";
-import ComponentIndex from "./ReactTopic/02_Components/ComponentIndex";
+import RenderingElementsIndex from "./ReactTopic/02_RenderingElements/RenderingElementsIndex";
 const App = () => {
   return (
     <>
-      <ComponentIndex />
+      <RenderingElementsIndex />
     </>
   );
 };
