@@ -11,10 +11,11 @@
 - we declare a variable called name and then use it inside JSX by wrapping it in curly braces
 
 Example :<br/>
-<span style="color: green">
+
+```diff
 const name = 'Josh Perez';<br/>
 const element = <tag> Hello, {name} </tag>;
-</span>
+```
 
 Example :<br/>
 
