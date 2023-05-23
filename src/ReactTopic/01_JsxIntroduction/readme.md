@@ -20,6 +20,8 @@ const element = <tag> Hello, {name} </tag>;
 Example :<br/>
 
 - 2 + 2, user.firstName, or formatName(user) are all valid JavaScript expressions<br/>
+
+```diff
   function formatName(user) {<br/>
   return user.firstName + ' ' + user.lastName;<br/>
   }<br/>
@@ -34,6 +36,7 @@ const element = (<br/>
 Hello, {formatName(user)}!<br/>
 </tag><br/>
 );<br/>
+```
 
 - We split JSX over multiple lines for readability. While it isn’t required, when doing this, we also recommend wrapping it in parentheses to avoid the pitfalls of automatic semicolon insertion.
 
