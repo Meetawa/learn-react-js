@@ -14,4 +14,37 @@ Example :<br/>
 const name = 'Josh Perez';<br/>
 const element = <tag> Hello, {name} </tag>;
 
-For example<br/> 2 + 2, user.firstName, or formatName(user) are all valid JavaScript expressions
+Example :<br/>
+
+- 2 + 2, user.firstName, or formatName(user) are all valid JavaScript expressions<br/>
+  function formatName(user) {
+  return user.firstName + ' ' + user.lastName;
+  }
+
+const user = {
+firstName: 'Harper',
+lastName: 'Perez'
+};
+
+const element = (
+
+  <tag>
+    Hello, {formatName(user)}!
+  </tag>
+);
+
+- We split JSX over multiple lines for readability. While it isn’t required, when doing this, we also recommend wrapping it in parentheses to avoid the pitfalls of automatic semicolon insertion.
+
+### JSX is an Expression Too
+
+- After compilation, JSX expressions become regular JavaScript function calls and evaluate to JavaScript objects.
+
+- This means that you can use JSX inside of if statements and for loops, assign it to variables, accept it as arguments, and return it from functions:
+
+Example : <br/>
+function getGreeting(user) {
+if (user) {
+return <tag>Hello, {formatName(user)}!</tag>;
+}
+return <tag>Hello, Stranger.</tag>;
+}
