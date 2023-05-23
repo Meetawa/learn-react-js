@@ -27,7 +27,7 @@ function Car() {
 Example :
 
 ```diff
-Create a Class component called Car
+// Create a Class component called Car
 
 class Car extends React.Component {
   render() {
