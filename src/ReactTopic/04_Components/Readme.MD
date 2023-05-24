@@ -42,3 +42,44 @@ class Car extends React.Component {
 Header,Content,Footer are react components where we defined function(Header and Content) and class(Footer) component inside these files.
 
 ## Rendering a Component
+
+```
+function Welcome() {
+  const name="rahulsaini"
+  return <h1>Hello, {name}</h1>;
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+const element = <Welcome />;
+root.render(element);
+```
+
+- What happens in this example:
+  - We call root.render() with the <Welcome /> element.
+  - React calls the Welcome component with {name: 'Sara'}
+  - Our Welcome component returns a <h1>Hello, Sara</h1> element as the result.
+  - React DOM efficiently updates the DOM to match <h1>Hello, Sara</h1>.
+
+### Composing Components
+
+- Components can refer to other components in their output.
+
+```
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+
+function App() {
+  return (
+    <div>
+      <Welcome name="Sara" />
+      <Welcome name="Cahal" />
+      <Welcome name="Edite" />
+    </div>
+  );
+}
+```
+
+#### NOTE
+
+- NEXT SECTION WE UNDERSTAND PROPS
