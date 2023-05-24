@@ -1,24 +1,6 @@
-# What is Component?
+## More About Class Components
 
-- Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.
-
-- Components come in two types, Class components and Function components
-
-## Function Components
-
-- A Function component also returns HTML, and behaves much the same way as a Class component, but Function components can be written using much less code, are easier to understand, and will be preferred in this tutorial.
-
-Example :
-
-- Create a Function component called Car
-
-```diff
-function Car() {
-  return <h2>Hi, I am a Car!</h2>;
-}
-```
-
-## Class Component
+- A "Class" in Javascript is a blueprint for creating objects that have the same properties and access to the same methods
 
 - A class component must include the extends React.Component statement. This statement creates an inheritance to React.Component, and gives your component access to React.Component's functions.
 
@@ -35,12 +17,6 @@ class Car extends React.Component {
   }
 }
 ```
-
-- React application has a component called Car, which returns a <h2> element.
-
-## More About Class Components
-
-- A "Class" in Javascript is a blueprint for creating objects that have the same properties and access to the same methods
 
 Example :
 
