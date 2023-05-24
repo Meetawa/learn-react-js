@@ -1,9 +1,9 @@
 import React from "react";
-import ImportAndExportIndex from "./ReactTopic/03_ImportAndExport/ImportAndExportIndex";
+import ClassComponentIndex from "./ReactTopic/05_ClassComponents/ClassComponentIndex";
 const App = () => {
   return (
     <>
-      <ImportAndExportIndex />
+      <ClassComponentIndex />
     </>
   );
 };
