@@ -164,3 +164,39 @@ export default function() {}
 
 export default () => {}
 ```
+
+- When importing a default export, you don’t use curly brackets.
+
+```
+import MyComponent from "./my-component"
+```
+
+### Default Aliasing
+
+- When you import a default export, you can give it whatever name you want
+
+```
+import WhateverNameIsBest from "./my-component"
+
+```
+
+### Combining
+
+- You can combine default and named exports in a single file.
+
+```
+export const NamedComponent1 = () => {};
+
+export const NamedComponent2 = () => {};
+
+const DefaultComponent = () => {};
+
+export default DefaultComponent;
+```
+
+- Importing is the same, named exports are in curly brackets, default is plaintext.
+
+```
+import DefaultComponent, { NamedComponent1, NamedComponent2 } from "./component"
+
+```
