@@ -93,6 +93,73 @@ return <h2>I am a {this.state.color} Car!</h2>;
 }
 ```
 
+## Components in Components
+
+- We can refer to components inside other components:
+
+Example :
+
+- Use the Car component inside the Garage component:
+
+```diff
+class Car extends React.Component {
+  render() {
+    return <h2>I am a Car!</h2>;
+  }
+}
+
+class Garage extends React.Component {
+  render() {
+    return (
+      <div>
+      <h1>Who lives in my Garage?</h1>
+      <Car />
+      </div>
+    );
+  }
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Garage />);
+```
+
+## Components in Files
+
+- React is all about re-using code, and it can be smart to insert some of your components in separate files.
+
+- Note that the file must start by importing React (as before), and it has to end with the statement export default Car;.
+
+Example :
+
+- This is the new file, we named it Car.js:
+
+```diff
+import React from 'react';
+
+class Car extends React.Component {
+  render() {
+    return <h2>Hi, I am a Car!</h2>;
+  }
+}
+
+export default Car;
+```
+
+- To be able to use the Car component, you have to import the file in your application.
+
+Example :
+
+- Now we import the Car.js file in the application, and we can use the Car component as if it was created here.
+
+```diff
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import Car from './Car.js';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Car />);
+```
+
 ### NOTE :
 
 Header,Content,Footer are react components where we defined function(Header and Content) and class(Footer) component inside these files.
