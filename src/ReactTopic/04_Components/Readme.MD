@@ -40,3 +40,5 @@ class Car extends React.Component {
 ### NOTE :
 
 Header,Content,Footer are react components where we defined function(Header and Content) and class(Footer) component inside these files.
+
+## Rendering a Component
