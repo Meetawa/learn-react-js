@@ -36,10 +36,19 @@ class Car extends React.Component {
 }
 ```
 
-### More About Class C.
+- React application has a component called Car, which returns a <h2> element.
 
-#### Class
+## More About Class Components
 
 - A "Class" in Javascript is a blueprint for creating objects that have the same properties and access to the same methods
 
-so,Header,Content,Footer are react components where we defined my function inside.
+Example :
+
+- Display the Car component in the "root" element:
+
+```diff
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Car />);
+```
+
+so,Header,Content,Footer are react components where we defined function inside.
