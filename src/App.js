@@ -1,9 +1,9 @@
 import React from "react";
-import ComponentIndex from "./ReactTopic/04_Components/ComponentIndex";
+import ImportAndExportIndex from "./ReactTopic/03_ImportAndExport/ImportAndExportIndex";
 const App = () => {
   return (
     <>
-      <ComponentIndex />
+      <ImportAndExportIndex />
     </>
   );
 };
