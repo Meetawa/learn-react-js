@@ -51,4 +51,4 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Car />);
 ```
 
-so,Header,Content,Footer are react components where we defined function inside.
+so,Header,Content,Footer are react components where we defined function and class inside these files.
