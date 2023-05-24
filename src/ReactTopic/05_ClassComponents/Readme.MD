@@ -135,7 +135,3 @@ import Car from './Car.js';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Car />);
 ```
-
-### NOTE :
-
-Header,Content,Footer are react components where we defined function(Header and Content) and class(Footer) component inside these files.
