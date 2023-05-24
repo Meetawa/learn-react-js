@@ -33,10 +33,11 @@ export const birth_country = "India"
 ## Importing
 
 - Similar to exporting, there are two ways to import.
+
   - Importing from default exports.
   - Importing from named exports.
 
--For example, we are creating a file app.js, and we want to use the contents from name.js and info.js.
+- For example, we are creating a file app.js, and we want to use the contents from name.js and info.js.
 
 - When importing from name.js, a default export can be done as shown below.
 
@@ -52,7 +53,7 @@ import prs from './name.js`
   - Therefore, we use {} to precisely target specific things from that file.
   - These are called named exports, as we import them by their name.
 
-```diff
+```diffm
 import {age} from './info.js'
 import {birth_country} from info.js'
 As shown below, you can also use aliases while importing in the named exports.
@@ -62,4 +63,104 @@ import {birth_country as bc} from 'info.js'
 
 - You will frequently be using these import and export features throughout React.
 
-## why we use default?
+# Difference Between Named and Default Exports in React
+
+```diff
+export function MyComponent() {}
+vs
+export default MyComponent
+```
+
+- Exports without a default tag are Named exports.
+
+- Exports with the default tag are Default exports.
+
+- Using one over the other can have effects on your code readability, file structure, and component organization.
+
+- Named and Default exports are not React-centric ideas. They are es6 features. However, this article will deal with the impacts they have in a React ecosystem.
+
+## Named Exports
+
+```diff
+export const MyFunction = () => {
+  ...body
+}
+
+// or
+
+export function MyFunction() {}
+```
+
+- When you want to import a named component, you use the same name it was exported with. Names must be imported inside curly brackets.
+
+```diff
+import { MyFunction } from "./my-component"
+```
+
+### Opt-in Aliasing
+
+- You can rename your exports with an alias if you have collisions in a file. This is scoped to the file doing the import.
+
+```diff
+import { MyComponent as MyComponentAlias } from "./my-component"
+```
+
+### Multiple Exports Per File
+
+- Named exports allow multiple exports in a single file.
+
+```diff
+export const MyFunction1 = () => {};
+
+export const MyFunction2 = () => {};
+
+export const MyFunction3 = () => {};
+```
+
+- our import like.
+
+```diff
+import { MyFunction1, MyFunction2, MyFunction3 } from "./my-components"
+
+```
+
+### Typescript Benefits
+
+- You can consolidate your named exports into a single index.ts file with Typescript.
+
+- During module resolution, if the Typescript sees an index.ts file it will attempt to resolve all defined imports.
+
+- if you wanted to simplify your imports, add an index.ts file into your ui-components directory
+  - ui-components /
+    - buttons.tsx
+    - inputs.tsx
+    - index.ts
+
+```
+export * from "./buttons";
+export * from "./inputs";
+```
+
+## Default Exports
+
+- Default exports are created by including a default tag in the export. Usually, you see default exports happen at the bottom of a file, but it’s possible to define them when your component is declared.
+
+```
+const MyComponent = () => {}
+
+export default MyComponent
+
+// or
+
+function MyComponent() {}
+
+export default MyComponent
+
+// or
+
+export default function() {}
+
+// or
+
+export default () => {}
+```
