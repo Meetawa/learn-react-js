@@ -36,3 +36,7 @@ class Car extends React.Component {
 }
 //React application has a component called Car, which returns a <h2> element.
 ```
+
+### NOTE :
+
+Header,Content,Footer are react components where we defined function(Header and Content) and class(Footer) component inside these files.
