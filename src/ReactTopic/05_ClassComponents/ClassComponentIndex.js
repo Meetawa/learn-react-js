@@ -1,7 +1,12 @@
 import React from "react";
+import Car from "./01_BasicInClass";
 
 const ClassComponentIndex = () => {
-  return <div>rahul saini</div>;
+  return (
+    <>
+      <Car />
+    </>
+  );
 };
 
 export default ClassComponentIndex;
