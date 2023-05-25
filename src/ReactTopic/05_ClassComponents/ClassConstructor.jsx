@@ -1,7 +1,9 @@
 import React from "react";
 
-const ClassConstructor = () => {
-  return <div></div>;
-};
+class ClassConstructor extends React.Component {
+  constructor() {
+    console.log("constructor is called");
+  }
+}
 
 export default ClassConstructor;
