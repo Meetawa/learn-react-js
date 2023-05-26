@@ -1,12 +1,11 @@
 import React from "react";
-import FunctionComponents from "./01_FunctionComponents";
-import Car from "./01_ClassComponents";
+import Fruit from "./01_FunctionComponents";
 
 const PropsIndex = () => {
+  const fname = { name: "Mongo", color: "yellow" };
   return (
     <div>
-      <FunctionComponents />
-      <Car />
+      <Fruit details={fname} />
     </div>
   );
 };
