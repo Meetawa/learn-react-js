@@ -2,7 +2,11 @@ import React from "react";
 
 class ClassConstructor extends React.Component {
   constructor() {
-    console.log("constructor is called");
+    super();
+    this.state = { color: "red" };
+  }
+  render() {
+    return <h2>I am a {this.state.color} Car!</h2>;
   }
 }
 

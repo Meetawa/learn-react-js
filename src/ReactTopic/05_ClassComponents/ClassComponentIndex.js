@@ -1,10 +1,10 @@
 import React from "react";
-import Car from "./01_BasicInClass";
+import ClassConstructor from "./02_ClassConstructor";
 
 const ClassComponentIndex = () => {
   return (
     <>
-      <Car />
+      <ClassConstructor />
     </>
   );
 };
