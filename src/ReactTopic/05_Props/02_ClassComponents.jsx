@@ -19,6 +19,7 @@ class Car2 extends React.Component {
 
 class Car extends React.Component {
   render() {
+    console.log("car0");
     console.log(this.props.carDetails);
     return (
       <>
