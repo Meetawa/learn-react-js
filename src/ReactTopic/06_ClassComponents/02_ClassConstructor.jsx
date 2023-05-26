@@ -1,5 +1,6 @@
 import React from "react";
 
+//component properties should be kept in an object called state.
 class ClassConstructor extends React.Component {
   constructor() {
     super();
