@@ -155,3 +155,63 @@ import Car from './Car.js';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Car />);
 ```
+
+# React Class Component State
+
+- React Class components have a built-in state object.
+
+- You might have noticed that we used state earlier in the component constructor section.
+
+- The state object is where you store property values that belongs to the component.
+
+- When the state object changes, the component re-renders.
+
+- Creating the state Object
+- The state object is initialized in the constructor:
+
+Example :
+
+- Specify the state object in the constructor method:
+
+```
+class Car extends React.Component {
+  constructor(props) {
+    super(props);
+  this.state = {brand: "Ford"};
+  }
+  render() {
+    return (
+      <div>
+        <h1>My Car</h1>
+      </div>
+    );
+  }
+}
+```
+
+- The state object can contain as many properties as you like:
+
+Example :
+
+- Specify all the properties your component need:
+
+```
+class Car extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      brand: "Ford",
+      model: "Mustang",
+      color: "red",
+      year: 1964
+    };
+  }
+  render() {
+    return (
+      <div>
+        <h1>My Car</h1>
+      </div>
+    );
+  }
+}
+```
