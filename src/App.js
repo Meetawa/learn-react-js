@@ -1,9 +1,9 @@
 import React from "react";
-import PropsIndex from "./ReactTopic/05_Props/PropsIndex";
+import ClassComponentIndex from "./ReactTopic/06_ClassComponents/ClassComponentIndex";
 const App = () => {
   return (
     <>
-      <PropsIndex />
+      <ClassComponentIndex />
     </>
   );
 };
