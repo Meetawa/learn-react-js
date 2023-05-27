@@ -1,4 +1,4 @@
-## More About Class Components
+# More About Class Components
 
 - A "Class" in Javascript is a blueprint for creating objects that have the same properties and access to the same methods
 
@@ -27,7 +27,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Car />);
 ```
 
-## Component Constructor
+# Component Constructor
 
 - If there is a constructor() function in your component, this function will be called when the component gets initiated.
 
@@ -69,7 +69,7 @@ return <h2>I am a {this.state.color} Car!</h2>;
 }
 ```
 
-## Props in the Constructor
+# Props in the Constructor
 
 - If your component has a constructor function, the props should always be passed to the constructor and also to the React.Component via the super() method.
 
@@ -89,7 +89,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Car model="Mustang"/>);
 ```
 
-## Components in Components
+# Components in Components
 
 - We can refer to components inside other components:
 
@@ -119,7 +119,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Garage />);
 ```
 
-## Components in Files
+# Components in Files
 
 - React is all about re-using code, and it can be smart to insert some of your components in separate files.
 
@@ -250,7 +250,7 @@ class Car extends React.Component {
 }
 ```
 
-## Changing the state Object
+# Changing the state Object
 
 - To change a value in the state object, use the this.setState() method.
 
@@ -293,11 +293,11 @@ class Car extends React.Component {
 }
 ```
 
-## Note how we pass props to the base constructor:
+# Note how we pass props to the base constructor:
 
 - Class components should always call the base constructor with props.
 
-## Using State Correctly
+# Using State Correctly
 
 - There are three things you should know about setState().
 
@@ -318,7 +318,7 @@ this.setState({comment: 'Hello'});
 
 - The only place where you can assign this.state is the constructor
 
-## State Updates May Be Asynchronous
+# State Updates May Be Asynchronous
 
 - React may batch multiple setState() calls into a single update for performance.
 
