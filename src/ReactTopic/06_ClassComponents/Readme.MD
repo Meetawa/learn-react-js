@@ -250,7 +250,7 @@ class Car extends React.Component {
 }
 ```
 
-### Changing the state Object
+## Changing the state Object
 
 - To change a value in the state object, use the this.setState() method.
 
@@ -297,7 +297,7 @@ class Car extends React.Component {
 
 - Class components should always call the base constructor with props.
 
-# Using State Correctly
+## Using State Correctly
 
 - There are three things you should know about setState().
 
@@ -352,3 +352,12 @@ this.setState(function(state, props) {
   };
 });
 ```
+
+# Lifecycle of Components
+
+- Each component in React has a lifecycle which you can monitor and manipulate during its three main phases.
+
+- The three phases are:
+  - Mounting
+  - Updating
+  - Unmounting.
