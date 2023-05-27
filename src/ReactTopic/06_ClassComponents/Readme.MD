@@ -296,3 +296,24 @@ class Car extends React.Component {
 ## Note how we pass props to the base constructor:
 
 - Class components should always call the base constructor with props.
+
+# Using State Correctly
+
+- There are three things you should know about setState().
+
+- Do Not Modify State Directly
+- For example, this will not re-render a component:
+
+```
+// Wrong
+this.state.comment = 'Hello';
+```
+
+- Instead, use setState():
+
+```
+// Correct
+this.setState({comment: 'Hello'});
+```
+
+- The only place where you can assign this.state is the constructor
