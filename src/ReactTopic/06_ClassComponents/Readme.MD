@@ -292,3 +292,7 @@ class Car extends React.Component {
   }
 }
 ```
+
+## Note how we pass props to the base constructor:
+
+- Class components should always call the base constructor with props.
