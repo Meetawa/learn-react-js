@@ -373,7 +373,7 @@ this.setState(function(state, props) {
   - 4.componentDidMount()
 - The render() method is required and will always be called, the others are optional and will be called if you define them.
 
-## 1.constructor
+## 1.constructor() Method
 
 - The constructor() method is called before anything else, when the component is initiated, and it is the natural place to set up the initial state and other initial values.
 
@@ -400,7 +400,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Header />);
 ```
 
-## 2.getDerivedStateFromProps
+## 2.getDerivedStateFromProps()
 
 - The getDerivedStateFromProps() method is called right before rendering the element(s) in the DOM.
 
@@ -432,4 +432,25 @@ class Header extends React.Component {
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Header favcol="yellow"/>);
+```
+
+## 3.render() Method
+
+- The render() method is required, and is the method that actually outputs the HTML to the DOM.
+
+```
+Example:
+A simple component with a simple render() method:
+
+class Header extends React.Component {
+  render() {
+    return (
+      <h1>This is the content of the Header component</h1>
+    );
+  }
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Header />);
+
 ```
