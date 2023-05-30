@@ -11,7 +11,7 @@ const ClassComponentIndex = () => {
       <PropsInConstructor model="Mustang" />
       <States />
       <Car />
-      <GetDerivedStateFromProps />
+      <GetDerivedStateFromProps favcol="yellow" />
     </>
   );
 };
