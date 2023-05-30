@@ -1,7 +1,9 @@
 import React from "react";
 
-const RenderMethod = () => {
-  return <div></div>;
-};
+class RenderMethod extends React.Component {
+  render() {
+    return <h1>rahulsaini</h1>;
+  }
+}
 
 export default RenderMethod;
