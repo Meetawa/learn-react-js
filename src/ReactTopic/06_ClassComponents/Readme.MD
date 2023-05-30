@@ -361,3 +361,14 @@ this.setState(function(state, props) {
   - Mounting
   - Updating
   - Unmounting.
+
+# Mounting
+
+- Mounting means putting elements into the DOM.
+
+- React has four built-in methods that gets called, in this order, when mounting a component:
+  - constructor()
+  - getDerivedStateFromProps()
+  - render()
+  - componentDidMount()
+- The render() method is required and will always be called, the others are optional and will be called if you define them.
