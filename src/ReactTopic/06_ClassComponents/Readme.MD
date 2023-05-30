@@ -461,6 +461,8 @@ root.render(<Header />);
 
 - This is where you run statements that requires that the component is already placed in the DOM.
 
+- We will tear down the timer in the componentWillUnmount() lifecycle method
+
 Example:
 
 - At first my favorite color is red, but give me a second, and it is yellow instead:
