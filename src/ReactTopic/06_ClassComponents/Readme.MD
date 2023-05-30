@@ -701,7 +701,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Header />);
 ```
 
-## 2.5componentDidUpdate
+## 2.5 componentDidUpdate
 
 - The componentDidUpdate method is called after the component is updated in the DOM.
 
