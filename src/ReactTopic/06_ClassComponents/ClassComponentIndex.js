@@ -6,6 +6,7 @@ import GetDerivedStateFromProps from "./LifeCycle_Methods/01_Mounting/02_GetDeri
 import RenderMethod from "./LifeCycle_Methods/01_Mounting/03_RenderMethod";
 import ComponentDidMount from "./LifeCycle_Methods/01_Mounting/04_ComponentDidMount";
 import Header from "./LifeCycle_Methods/02_Updating/1_GetDerivedStateFromProps";
+import ShouldComponentUpdate from "./LifeCycle_Methods/02_Updating/2_ShouldComponentUpdate";
 const ClassComponentIndex = () => {
   return (
     <>
@@ -17,6 +18,7 @@ const ClassComponentIndex = () => {
       <RenderMethod />
       <ComponentDidMount />
       <Header favcol="yellow" />
+      <ShouldComponentUpdate />
     </>
   );
 };
