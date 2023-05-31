@@ -5,6 +5,7 @@ import States, { Car } from "./04_ClassComponentState";
 import GetDerivedStateFromProps from "./LifeCycle_Methods/01_Mounting/02_GetDerivedStateFromProps";
 import RenderMethod from "./LifeCycle_Methods/01_Mounting/03_RenderMethod";
 import ComponentDidMount from "./LifeCycle_Methods/01_Mounting/04_ComponentDidMount";
+import Header from "./LifeCycle_Methods/02_Updating/1_GetDerivedStateFromProps";
 const ClassComponentIndex = () => {
   return (
     <>
@@ -15,6 +16,7 @@ const ClassComponentIndex = () => {
       <GetDerivedStateFromProps favcol="yellow" />
       <RenderMethod />
       <ComponentDidMount />
+      <Header favcol="yellow" />
     </>
   );
 };
