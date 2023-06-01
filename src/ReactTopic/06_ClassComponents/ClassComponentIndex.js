@@ -19,6 +19,7 @@ const ClassComponentIndex = () => {
       <ComponentDidMount />
       <Header favcol="yellow" />
       <ShouldComponentUpdate />
+      <RenderMethod />
     </>
   );
 };
