@@ -1,9 +1,9 @@
 import React from "react";
 
-export default class RenderMethod extends React.Component {
+export default class RenderUpdating extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { favoritecolor: "red" };
+    this.state = { favoritecolor: "green" };
   }
   changeColor = () => {
     this.setState({ favoritecolor: "blue" });
