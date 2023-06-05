@@ -8,6 +8,7 @@ import ComponentDidMount from "./LifeCycle_Methods/01_Mounting/04_ComponentDidMo
 import Header from "./LifeCycle_Methods/02_Updating/1_GetDerivedStateFromProps";
 import ShouldComponentUpdate from "./LifeCycle_Methods/02_Updating/2_ShouldComponentUpdate";
 import RenderUpdating from "./LifeCycle_Methods/02_Updating/3_RenderUpdating";
+import GetSnapshotBeforeUpdate from "./LifeCycle_Methods/02_Updating/4_GetSnapshotBeforeUpdate";
 const ClassComponentIndex = () => {
   return (
     <>
@@ -21,6 +22,7 @@ const ClassComponentIndex = () => {
       <Header favcol="yellow" />
       <ShouldComponentUpdate />
       <RenderUpdating />
+      <GetSnapshotBeforeUpdate />
     </>
   );
 };
