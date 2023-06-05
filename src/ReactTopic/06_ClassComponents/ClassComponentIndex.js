@@ -10,6 +10,7 @@ import ShouldComponentUpdate from "./LifeCycle_Methods/02_Updating/2_ShouldCompo
 import RenderUpdating from "./LifeCycle_Methods/02_Updating/3_RenderUpdating";
 import GetSnapshotBeforeUpdate from "./LifeCycle_Methods/02_Updating/4_GetSnapshotBeforeUpdate";
 import ComponentDidUpdate from "./LifeCycle_Methods/02_Updating/5_ComponentDidUpdate";
+import ComponentWillUnmount from "./LifeCycle_Methods/03_Unmounting/1_ComponentWillUnmount";
 const ClassComponentIndex = () => {
   return (
     <>
@@ -25,6 +26,7 @@ const ClassComponentIndex = () => {
       <RenderUpdating />
       <GetSnapshotBeforeUpdate />
       <ComponentDidUpdate />
+      <ComponentWillUnmount />
     </>
   );
 };
