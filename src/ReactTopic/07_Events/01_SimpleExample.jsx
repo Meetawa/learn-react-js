@@ -13,6 +13,7 @@ const SimpleExample = () => {
     <>
       {/* This is One way to handle events */}
       <button onClick={Successful}>Click Button </button>
+      <br />
       {/* This is One way to handle events */}
       <button onClick={Forget}>Forget password </button>
     </>
