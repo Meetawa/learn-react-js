@@ -1,9 +1,9 @@
 import React from "react";
-import EventIndex from "./ReactTopic/07_Events/EventIndex";
+import ConditionalRendering from "./ReactTopic/08_Conditional_Rendering/ConditionalRendering";
 const App = () => {
   return (
     <>
-      <EventIndex />
+      <ConditionalRendering />
     </>
   );
 };
