@@ -111,7 +111,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Football />);
 ```
 
-- Another difference is that you cannot return false to prevent default behavior in React. You must call preventDefault explicitly. For example, with plain HTML, to prevent the default form behavior of submitting, you can write:
+- Another difference is that you cannot return false to prevent default behavior in React. You must call preventDefault explicitly.
+- For example, with plain HTML, to prevent the default form behavior of submitting, you can write:
 
 ```
 <form onsubmit="console.log('You clicked submit.'); return false">
