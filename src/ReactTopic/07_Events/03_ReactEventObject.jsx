@@ -9,9 +9,7 @@ const ReactEventObject = () => {
         */
   };
 
-  return (
-    <button onClick={(event) => shoot("Goal!", event)}>Take the shot!</button>
-  );
+  return <button onClick={(event) => shoot("Goal!", event)}>click </button>;
 };
 
 export default ReactEventObject;
