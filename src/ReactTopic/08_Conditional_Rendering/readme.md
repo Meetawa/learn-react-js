@@ -36,3 +36,12 @@ function Goal(props) {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Goal isGoal={false} />);
 ```
+
+- Try changing the isGoal attribute to true:
+
+Example:
+
+```
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Goal isGoal={true} />);
+```
