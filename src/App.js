@@ -1,9 +1,9 @@
 import React from "react";
-import ClassComponentIndex from "./ReactTopic/06_ClassComponents/ClassComponentIndex";
+import EventIndex from "./ReactTopic/07_Events/EventIndex";
 const App = () => {
   return (
     <>
-      <ClassComponentIndex />
+      <EventIndex />
     </>
   );
 };
