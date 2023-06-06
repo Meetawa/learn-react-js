@@ -6,7 +6,7 @@ const SimpleExample = () => {
   };
 
   const Forget = () => {
-    document.write("password is changed");
+    alert("password is changed");
   };
 
   return (
@@ -14,8 +14,8 @@ const SimpleExample = () => {
       {/* This is One way to handle events */}
       <button onClick={Successful}>Click Button </button>
       <br />
-      {/* This is One way to handle events */}
-      <button onClick={Forget}>Forget password </button>
+      {/* This is Second way to handle events */}
+      <button onClick={() => Forget()}>Forget password </button>
     </>
   );
 };
