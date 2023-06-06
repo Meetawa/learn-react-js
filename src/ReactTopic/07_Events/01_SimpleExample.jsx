@@ -1,7 +1,14 @@
 import React from "react";
 
 const SimpleExample = () => {
-  return <div></div>;
+  const Successful = () => {
+    alert("Form Successfully login");
+  };
+  return (
+    <>
+      <button onClick={Successful}>Click Button </button>
+    </>
+  );
 };
 
 export default SimpleExample;
