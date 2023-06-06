@@ -1,7 +1,12 @@
 import React from "react";
+import SimpleExample from "./01_SimpleExample";
 
 const EventIndex = () => {
-  return <div></div>;
+  return (
+    <>
+      <SimpleExample />
+    </>
+  );
 };
 
 export default EventIndex;
