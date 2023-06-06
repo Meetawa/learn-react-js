@@ -5,9 +5,26 @@
   - React events are named using camelCase, rather than lowercase.
   - With JSX you pass a function as the event handler, rather than a string.
 
+# Adding Events
+
+- React events are written in camelCase syntax:
+
+  ```
+    // onClick instead of onclick.
+
+  ```
+
+- React event handlers are written inside curly braces:
+
+```
+  // onClick={shoot} instead of onClick="shoot()".
+
+```
+
 For example, the HTML:
 
 ```
+
 <button onclick="activateLasers()">
   Activate Lasers
 </button>
