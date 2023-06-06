@@ -4,7 +4,7 @@ import SimpleExample from "./01_SimpleExample";
 const ConditionalRendering = () => {
   return (
     <>
-      <SimpleExample />
+      <SimpleExample isLoggedIn="true" />
     </>
   );
 };
