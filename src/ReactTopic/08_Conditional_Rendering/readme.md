@@ -15,3 +15,24 @@ function GuestGreeting(props) {
 return <h1>Please sign up.</h1>;
 }
 ```
+
+# if Statement
+
+- We can use the if JavaScript operator to decide which component to render.
+
+Example:
+
+- Now, we'll create another component that chooses which component to render based on a condition:
+
+```
+function Goal(props) {
+  const isGoal = props.isGoal;
+  if (isGoal) {
+    return <MadeGoal/>;
+  }
+  return <MissedGoal/>;
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Goal isGoal={false} />);
+```
