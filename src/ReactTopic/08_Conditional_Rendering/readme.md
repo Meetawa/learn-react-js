@@ -45,3 +45,27 @@ Example:
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Goal isGoal={true} />);
 ```
+
+# Element Variables
+
+- You can use variables to store elements. This can help you conditionally render a part of the component while the rest of the output doesn’t change.
+
+- Consider these two new components representing Logout and Login buttons:
+
+```
+function LoginButton(props) {
+return (
+<button onClick={props.onClick}>
+Login
+</button>
+);
+}
+
+function LogoutButton(props) {
+return (
+<button onClick={props.onClick}>
+Logout
+</button>
+);
+}
+```
