@@ -120,3 +120,58 @@ root.render(<LoginControl />);
 # Inline If with Logical && Operator
 
 - You may embed expressions in JSX by wrapping them in curly braces. This includes the JavaScript logical && operator. It can be handy for conditionally including an element:
+
+Example:
+
+- We can embed JavaScript expressions in JSX by using curly braces:
+
+```
+function Garage(props) {
+  const cars = props.cars;
+  return (
+    <>
+      <h1>Garage</h1>
+      {cars.length > 0 &&
+        <h2>
+          You have {cars.length} cars in your garage.
+        </h2>
+      }
+    </>
+  );
+}
+
+const cars = ['Ford', 'BMW', 'Audi'];
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Garage cars={cars} />);
+```
+
+- If cars.length > 0 is equates to true, the expression after && will render.
+
+- Try emptying the cars array:
+
+Example:
+
+```
+const cars = [];
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Garage cars={cars} />);
+```
+
+- It works because in JavaScript, true && expression always evaluates to expression, and false && expression always evaluates to false.
+
+- Therefore, if the condition is true, the element right after && will appear in the output. If it is false, React will ignore and skip it.
+
+- Note that returning a falsy expression will still cause the element after && to be skipped but will return the falsy expression. In the example below, <div>0</div> will be returned by the render method.
+
+```
+render() {
+  const count = 0;
+  return (
+    <div>
+      {count && <h1>Messages: {count}</h1>}
+    </div>
+  );
+}
+```
+
+# Ternary Operator (Inline If-Else with Conditional Operator)
