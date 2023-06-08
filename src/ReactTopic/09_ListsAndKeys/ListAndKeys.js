@@ -4,11 +4,12 @@ import RenderingMultipleComponents from "./02_RenderingMultipleComponents";
 import BasicListComponent from "./03_BasicListComponent";
 
 const ListAndKeys = () => {
+  const numbers = [1, 2, 3, 4, 5];
   return (
     <div>
       <SimpleExam />
       <RenderingMultipleComponents />
-      <BasicListComponent />
+      <BasicListComponent numbers={numbers} />
     </div>
   );
 };
