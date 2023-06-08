@@ -8,5 +8,4 @@ const SimpleExample = () => {
   );
 };
 
-export default SimpleExam;
-<h1>rahulsaini</h1>;
+export default SimpleExample;
