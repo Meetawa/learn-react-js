@@ -12,3 +12,22 @@ console.log(doubled);
 - This code logs [2, 4, 6, 8, 10] to the console.
 
 - In React, transforming arrays into lists of elements is nearly identical.
+
+# Rendering Multiple Components
+
+- You can build collections of elements and include them in JSX using curly braces {}.
+
+- Below, we loop through the numbers array using the JavaScript map() function. We return a <li> element for each item. Finally, we assign the resulting array of elements to listItems:
+
+```
+const numbers = [1, 2, 3, 4, 5];
+const listItems = numbers.map((number) =>
+  <li>{number}</li>
+);
+```
+
+- Then, we can include the entire listItems array inside a <ul> element:
+
+```
+<ul>{listItems}</ul>
+```
