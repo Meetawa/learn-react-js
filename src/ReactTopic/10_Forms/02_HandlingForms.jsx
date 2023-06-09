@@ -5,6 +5,7 @@ const HandlingForms = () => {
 
   return (
     <>
+      <h1>HandlingForms :</h1>
       <h1>{name}</h1>
       <form>
         <label>
