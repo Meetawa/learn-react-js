@@ -56,3 +56,31 @@ root.render(<MyForm />);
 - You can control changes by adding event handlers in the onChange attribute.
 
 - We can use the useState Hook to keep track of each inputs value and provide a "single source of truth" for the entire application.
+
+Example:
+
+- Use the useState Hook to manage the input:
+
+```
+import { useState } from 'react';
+import ReactDOM from 'react-dom/client';
+
+function MyForm() {
+  const [name, setName] = useState("");
+
+  return (
+    <form>
+      <label>Enter your name:
+        <input
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+      </label>
+    </form>
+  )
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<MyForm />);
+```
