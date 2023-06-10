@@ -4,6 +4,7 @@ import HandlingForms from "./02_HandlingForms";
 import SubmittingForms from "./03_SubmittingForms";
 import MultipleInputFields from "./04_MultipleInputFields";
 import TextArea from "./05_TextArea";
+import Select from "./06_Select";
 
 const FormIndex = () => {
   return (
@@ -13,6 +14,7 @@ const FormIndex = () => {
       <SubmittingForms />
       <MultipleInputFields />
       <TextArea />
+      <Select />
     </>
   );
 };
