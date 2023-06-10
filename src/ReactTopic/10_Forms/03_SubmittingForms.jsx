@@ -1,16 +1,26 @@
 import React, { useState } from "react";
 
 const SubmittingForms = () => {
-  const [data, setData] = useState("");
+  const [name, setName] = useState("");
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    alert(`The name you entered was: ${name}`);
+  };
 
   return (
     <>
-      <h1>SubmittingForms :r</h1>
-      <form>
+      <h1>SubmittingForms :</h1>
+      <form onSubmit={handleSubmit}>
         <label>
-          LOGIN FORM :<br></br>
-          <input type="text" onChange={(e) => setData(e.target.value)} />
+          Enter your name:
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
         </label>
+        <input type="submit" />
       </form>
     </>
   );
