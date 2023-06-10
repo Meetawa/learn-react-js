@@ -27,6 +27,7 @@ const MultipleInputFields = () => {
           />
         </label>
         <br />
+        <br />
         <label>
           Enter your age:
           <input
