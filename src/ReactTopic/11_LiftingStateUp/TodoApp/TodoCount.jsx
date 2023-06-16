@@ -1,7 +1,7 @@
 import React from "react";
 
-const TodoCount = () => {
-  return <div>Total Todos :</div>;
-};
+function TodoCount({ todos }) {
+  return <div>Total Todos: {todos.length}</div>;
+}
 
 export default TodoCount;
