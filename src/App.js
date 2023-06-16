@@ -1,9 +1,9 @@
 import React from "react";
-import LiftingStateUpIndex from "./ReactTopic/11_LiftingStateUp/LiftingStateUpIndex";
+import TodoApp from "./ReactTopic/11_LiftingStateUp/TodoApp/TodoApp";
 const App = () => {
   return (
     <>
-      <LiftingStateUpIndex />
+      <TodoApp />
     </>
   );
 };
