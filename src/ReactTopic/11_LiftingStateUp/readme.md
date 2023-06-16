@@ -210,15 +210,11 @@ return (
 }
 ```
 
-Not only by lifting state up and passing its state variable down to the components that need to read from it can we use this pattern – we can also use it for callbacks to be able to update state.
-Once you add a new item to your todo list, it's immediately added to state. Then you see your TodoList component re-render to display that new item, as well as TodoCount to show the total number of todos which is now 4:
+- Not only by lifting state up and passing its state variable down to the components that need to read from it can we use this pattern – we can also use it for callbacks to be able to update state.
+  Once you add a new item to your todo list, it's immediately added to state. Then you see your TodoList component re-render to display that new item, as well as TodoCount to show the total number of todos which is now 4:
 
-lifting-state-2
-Conclusion
-Lifting state up is an important pattern for React developers because sometimes we have state that's located within a particular component that also needs to be shared with sibling components.
+# Conclusion
 
-Instead of using an entire state management library like Redux or React Context, we can just lift the state up to the closest common ancestor and pass both the state variables the state values down as well as any callbacks to update that state.
+- Lifting state up is an important pattern for React developers because sometimes we have state that's located within a particular component that also needs to be shared with sibling components.
 
-```
-
-```
+- Instead of using an entire state management library like Redux or React Context, we can just lift the state up to the closest common ancestor and pass both the state variables the state values down as well as any callbacks to update that state.
