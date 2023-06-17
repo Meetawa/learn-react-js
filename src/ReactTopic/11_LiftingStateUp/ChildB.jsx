@@ -1,7 +1,8 @@
 import React from "react";
 
-const ChildB = () => {
-  return <div></div>;
+const ChildB = (props) => {
+  console.log(props);
+  return <></>;
 };
 
 export default ChildB;
