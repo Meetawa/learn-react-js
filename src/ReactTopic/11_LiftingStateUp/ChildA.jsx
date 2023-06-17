@@ -2,9 +2,9 @@ import React from "react";
 import ChildB from "./ChildB";
 
 const ChildA = () => {
-  const nameIS = "Rahul Saini";
-  function parentAlert() {
-    alert("hello");
+  function parentAlert(props) {
+    console.log(props);
+    alert(props);
   }
   return (
     <>
