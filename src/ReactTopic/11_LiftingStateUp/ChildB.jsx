@@ -1,8 +1,11 @@
 import React from "react";
 
 const ChildB = (props) => {
-  console.log(props);
-  return <></>;
+  return (
+    <>
+      <h1> Name is {props.nameIS}</h1>
+    </>
+  );
 };
 
 export default ChildB;
