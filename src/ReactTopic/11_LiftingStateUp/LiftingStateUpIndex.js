@@ -1,7 +1,12 @@
 import React from "react";
+import ChildA from "./ChildA";
 
 const LiftingStateUpIndex = () => {
-  return <div></div>;
+  return (
+    <>
+      <ChildA />
+    </>
+  );
 };
 
 export default LiftingStateUpIndex;
