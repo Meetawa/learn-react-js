@@ -1,7 +1,13 @@
 import React from "react";
+import ChildB from "./ChildB";
 
 const ChildA = () => {
-  return <div></div>;
+  const nameIS = "Rahul Saini";
+  return (
+    <>
+      <ChildB nameIS={nameIS} />
+    </>
+  );
 };
 
 export default ChildA;
