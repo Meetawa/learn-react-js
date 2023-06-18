@@ -1,9 +1,9 @@
 import React from "react";
-import LiftingStateUpIndex from "./ReactTopic/11_LiftingStateUp/LiftingStateUpIndex";
+import CompAndInhIndex from "./ReactTopic/12_Composition_vs_Inheritance/CompAndInhIndex";
 const App = () => {
   return (
     <>
-      <LiftingStateUpIndex />
+      <CompAndInhIndex />
     </>
   );
 };
