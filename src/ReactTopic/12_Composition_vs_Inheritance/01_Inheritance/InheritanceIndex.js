@@ -1,10 +1,11 @@
 import React from "react";
-import { CreateUserName } from "./Inheritance";
+import { CreateUserName, UpdateUserName } from "./Inheritance";
 
 const InheritanceIndex = () => {
   return (
     <>
       <CreateUserName />
+      <UpdateUserName />
     </>
   );
 };
