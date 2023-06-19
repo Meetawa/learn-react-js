@@ -302,3 +302,82 @@ const x = 5.6;
 
   - Change the elements of constant array
   - Change the properties of constant object
+
+# 4.Array Methods
+
+- React is the most popular front-end library at the moment. This makes it very important to understand some core concepts that will help you improve your development process. In this blog post, I’ve compiled some very popular array methods that are frequently used in react project. I trust you'll find this very helpful.
+
+- First off, let’s consider what is an array method. Simply put, an array method is a method that can be called on an array to perform an action on or with that array. Here are a few javascript array methods used in react.
+
+# must-know array methods in React :
+
+## .map()
+
+- This array method takes in a function that will be called on each element in a given array and it returns a new set of an array without modifying the original array. Simply put, it helps us create a new set of array based on an existing one.
+
+```
+Quick Example
+
+The code snippet below shows a new set of an array after using the map method to add 3 to each element in the numbers array.
+
+const numbers = [1, 3, 5, 7];
+const newNumbers = numbers.map( number => number + 3);
+// newNumbers will be equal to ['4', '6', '8', '10']
+```
+
+## .reduce()
+
+- This is a great array method that uses an accumulator to reduce all elements in an array to a single value. It basically takes in two augments, a callback function and an initial value, performs an action, and returns a single value, the value being any type i.e. object, array, string, integer. The call back function takes in two parameters namely: accumulator and current value.
+
+```
+Quick Example
+
+The code snippet below shows a single or the cumulated value being returned, after using the reduce method to add the accumulated value with the current value, the function is iterating over.
+
+const numbers = [1, 2, 3, 4, 5];
+const newValue = numbers.reduce( (accumulator, currentValue)=> accumulator + currentValue);
+console.log(newValue);
+// newValue will return 15
+```
+
+- It is also worthy of mentioning that there are other cool features you can use the array method to do. For more on that, check the MDN docs for example of that. Be sure to thank me later😁
+
+## .filter()
+
+- Just as it sounds, it works similar to the way the .map() method works. It filters an array based on if an element in the array, meets the condition passed in the function and then, it returns an array.
+
+```
+Quick Example
+
+const numbers = [1, 2, 3, 4, 5, 6, 7];
+const newValue = numbers.filter( (number)=> number >= 3);
+console.log(newValue);
+// newValue will return [3, 4, 5, 6, 7]
+```
+
+## .includes()
+
+- This method simply checks if an element exists in a given array and returns a boolean(true or false). Do note that there are some constraints with regards to the data types that the include method can check for. This is because of the way Javascript treats objects and primitive types.
+
+```
+Quick Example
+
+const numbers = [1, 2, 3, 4, 5];
+const newValue = numbers.includes(3);
+console.log(newValue);
+// newValue will return true
+```
+
+## .find()
+
+- This method takes in a function that checks for a specific element in an array and returns the very first occurrence of the condition.
+
+```
+Quick Example
+
+const numbers = [1, 2, 3, 4];
+const newValue = numbers.find((number)=> number > 3 );
+console.log(newValue);
+// newValue will return 4
+
+```
