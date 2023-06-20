@@ -1,9 +1,9 @@
 import React from "react";
-import CompAndInhIndex from "./01_Basic_React_Topics/12_Composition_vs_Inheritance/CompAndInhIndex";
+import ReactES6Concept from "./01_Basic_React_Topics/00_React_ES6/ReactES6Concept";
 const App = () => {
   return (
     <>
-      <CompAndInhIndex />
+      <ReactES6Concept />
     </>
   );
 };
