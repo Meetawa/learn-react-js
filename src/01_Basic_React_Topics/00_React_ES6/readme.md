@@ -513,7 +513,9 @@ const message = 'My ' + model + ' is registered in ' + state + '.';
 }
 ```
 
-# 6.Spread Operator
+# 6.Spread And Rest Operator
+
+## Spread Operator :
 
 - The JavaScript spread operator (...) allows us to quickly copy all or part of an existing array or object into another array or object.
 
@@ -554,4 +556,174 @@ const updateMyVehicle = {
 }
 
 const myUpdatedVehicle = {...myVehicle, ...updateMyVehicle}
+```
+
+## Rest Operator :
+
+- The rest parameter is an improved way to handle function parameters, allowing us to more easily handle various inputs as parameters in a function. The rest parameter syntax allows us to represent an indefinite number of arguments as an array. With the help of a rest parameter, a function can be called with any number of arguments, no matter how it was defined. Rest parameter is added in ES2015 or ES6 which improved the ability to handle parameter.
+
+```
+Syntax:
+
+//... is the rest parameter (triple dots)
+function functionname(...parameters)
+{
+statement;
+}
+```
+
+<mark>Note:</mark> When … is at the end of the function parameter, it is the rest parameter. It stores n number of parameters as an array. Let’s see how the rest parameter works:
+
+Example: Let’s see how the rest parameter works:
+
+```
+    // Without rest parameter
+    function fun(a, b){
+        return a + b;
+    }
+    console.log(fun(1, 2)); // 3
+    console.log(fun(1, 2, 3, 4, 5)); // 3
+```
+
+- Output:
+
+3
+3
+
+- In the above code, no error will be thrown even when we are passing arguments more than the parameters, but only the first two arguments will be evaluated. It’s different in the case of the rest parameter. With the use of the rest parameter, we can gather any number of arguments into an array and do what we want with them.
+
+Example: Javascript code demonstrating the addition of numbers using the rest parameter.
+
+```
+    // es6 rest parameter
+    function fun(...input){
+        let sum = 0;
+        for(let i of input){
+            sum+=i;
+        }
+        return sum;
+    }
+    console.log(fun(1,2)); //3
+    console.log(fun(1,2,3)); //6
+    console.log(fun(1,2,3,4,5)); //15
+```
+
+- Output:
+
+3
+6
+15
+
+- We were able to get the sum of all the elements that we enter in the argument when we call the fun() function. We get the sum of all the elements in the array by making use of the for..of loop which is used to traverse the iterable elements inside an array.
+
+<mark>Note:</mark> The rest parameter has to be the last argument, as its job is to collect all the remaining arguments into an array. So having a function definition like the code below doesn’t make any sense and will throw an error.
+
+```
+    // non-sense code
+    function fun(a,...b,c){
+         //code
+         return;
+    }
+```
+
+- Let’s make use of the rest parameter with some other arguments inside a function, like this:
+
+```
+    // rest with function and other arguments
+    function fun(a,b,...c){
+        console.log(`${a} ${b}`); //Mukul Latiyan
+        console.log(c);  //[ 'Lionel', 'Messi', 'Barcelona' ]
+        console.log(c[0]); //Lionel
+        console.log(c.length); //3
+        console.log(c.indexOf('Lionel')); //0
+    }
+    fun('Mukul','Latiyan','Lionel','Messi','Barcelona');
+```
+
+- Output:
+
+Mukul Latiyan
+['Lionel', 'Messi', 'Barcelona']
+Lionel
+3
+0
+
+- In the above code sample, we passed the rest parameter as the third parameter, and then we basically called the function fun() with five arguments the first two were treated normally and the rest were all collected by the rest parameter hence we get ‘Lionel’ when we tried to access c[0] and it is also important to note that the rest parameter gives an array in return and we can make use of the array methods that the javascript provides us.
+
+# 7.Modules
+
+- JavaScript modules allow you to break up your code into separate files.
+
+- This makes it easier to maintain the code-base.
+
+- ES Modules rely on the import and export statements.
+
+# Export
+
+- You can export a function or variable from any file.
+
+- Let us create a file named person.js, and fill it with the things we want to export.
+
+- There are two types of exports:
+  - 1.Named
+  - 2.Default
+
+### 1.Named Exports
+
+- You can create named exports two ways. In-line individually, or all at once at the bottom.
+
+```
+Example
+In-line individually:
+
+person.js
+
+export const name = "Jesse"
+export const age = 40
+All at once at the bottom:
+person.js
+
+const name = "Jesse"
+const age = 40
+
+export { name, age }
+```
+
+## 2.Default Exports
+
+- Let us create another file, named message.js, and use it for demonstrating default export.
+
+- You can only have one default export in a file.
+
+```
+Example
+message.js
+
+const message = () => {
+const name = "Jesse";
+const age = 40;
+return name + ' is ' + age + 'years old.';
+};
+
+export default message;
+```
+
+# Import
+
+- You can import modules into a file in two ways, based on if they are named exports or default exports.
+
+- Named exports must be destructured using curly braces. Default exports do not.
+
+```
+Example
+Import named exports from the file person.js:
+
+import { name, age } from "./person.js";
+```
+
+```
+Example
+Import a default export from the file message.js:
+
+import message from "./message.js";
 ```
