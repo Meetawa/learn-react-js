@@ -36,7 +36,7 @@ class Car {
 
 - Notice the case of the class name. We have begun the name, "Car", with an uppercase character. This is a standard naming convention for classes.
 
-### Now you can create objects using the Car class:
+### Now you can create objects using the Car class
 
 ```
 Example
@@ -309,7 +309,7 @@ const x = 5.6;
 
 - First off, let’s consider what is an array method. Simply put, an array method is a method that can be called on an array to perform an action on or with that array. Here are a few javascript array methods used in react.
 
-# must-know array methods in React :
+# must-know array methods in React
 
 ## .map()
 
@@ -515,7 +515,7 @@ const message = 'My ' + model + ' is registered in ' + state + '.';
 
 # 6.Spread And Rest Operator
 
-## Spread Operator :
+## Spread Operator
 
 - The JavaScript spread operator (...) allows us to quickly copy all or part of an existing array or object into another array or object.
 
@@ -558,7 +558,7 @@ const updateMyVehicle = {
 const myUpdatedVehicle = {...myVehicle, ...updateMyVehicle}
 ```
 
-## Rest Operator :
+## Rest Operator
 
 - The rest parameter is an improved way to handle function parameters, allowing us to more easily handle various inputs as parameters in a function. The rest parameter syntax allows us to represent an indefinite number of arguments as an array. With the help of a rest parameter, a function can be called with any number of arguments, no matter how it was defined. Rest parameter is added in ES2015 or ES6 which improved the ability to handle parameter.
 
