@@ -25,6 +25,8 @@ const ArrayMethods = () => {
       {NewNumbers}
       <h3>4.2 Reduce( )</h3>
       {newValue}
+      <h3>4.3 Filter( )</h3>
+      {newData}
     </>
   );
 };
