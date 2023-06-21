@@ -5,6 +5,7 @@ import Variables from "./03_Variables";
 import ArrayMethods from "./04_Array Methods";
 import { DestructuringArray, DestructuringObject } from "./05_Destructuring";
 import SpreadOperator from "./06_SpreadOperator";
+import RestOperator from "./07_RestOperator";
 
 const ReactES6Concept = () => {
   return (
@@ -31,6 +32,9 @@ const ReactES6Concept = () => {
 
       <h2>6. SpreadOperator : </h2>
       <SpreadOperator />
+
+      <h2>7. RestOperator : </h2>
+      <RestOperator />
     </>
   );
 };
