@@ -37,7 +37,49 @@ const DestructuringArray = () => {
 //DestructuringObject
 
 const DestructuringObject = () => {
-  return <></>;
+  const vehicleOne = {
+    brand: "Ford",
+    model: "Mustang",
+    type: "car",
+    year: 2021,
+    color: "red",
+  };
+
+  // old way
+  function myVehicle(vehicle) {
+    const message =
+      "My " +
+      vehicle.type +
+      " is a " +
+      vehicle.color +
+      " " +
+      vehicle.brand +
+      " " +
+      vehicle.model +
+      ".";
+    console.log(message);
+  }
+  //With destructuring:
+
+  const vehicleOne1 = {
+    brand: "Ford",
+    model: "Mustang",
+    type: "car",
+    year: 2021,
+    color: "red",
+  };
+
+  function myVehicle1({ type, color, brand, model }) {
+    const message1 =
+      "My " + type + " is a " + color + " " + brand + " " + model + ".";
+    console.log(message1);
+  }
+  return (
+    <>
+      {myVehicle(vehicleOne)}
+      {myVehicle1(vehicleOne1)}
+    </>
+  );
 };
 
 export { DestructuringArray, DestructuringObject };
