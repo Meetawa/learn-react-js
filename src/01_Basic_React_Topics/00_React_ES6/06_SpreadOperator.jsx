@@ -6,9 +6,24 @@ const SpreadOperator = () => {
 
   const TotalArray = [...Array1, ...Array2];
 
+  const myVehicle = {
+    brand: "Ford",
+    model: "Mustang",
+    color: "red",
+  };
+
+  const updateMyVehicle = {
+    type: "car",
+    year: 2021,
+    color: "yellow",
+  };
+
+  const myUpdatedVehicle = { ...myVehicle, ...updateMyVehicle };
+
   return (
     <>
-      <h2>Array Element is : {TotalArray}</h2>
+      <h2>Array Elements are : {TotalArray}</h2>
+      <h2>{console.log(myUpdatedVehicle)}</h2>
     </>
   );
 };
