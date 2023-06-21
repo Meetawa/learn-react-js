@@ -10,10 +10,15 @@ const TernaryOperator = () => {
     console.log("render login");
   }
   if (authenticated) {
+    //render app
+
     renderApp();
   } else {
     renderLogin();
   }
+
+  //with Ternary Operator
+  authenticated ? renderApp() : renderLogin(); //render app
   return <div></div>;
 };
 
