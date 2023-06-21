@@ -3,6 +3,7 @@ import Classes from "./01_Classes";
 import { ArrowFunction, ArrowFunctionWithProps } from "./02_ArrowFunction";
 import Variables from "./03_Variables";
 import ArrayMethods from "./04_Array Methods";
+import { DestructuringArray, DestructuringObject } from "./05_Destructuring";
 
 const ReactES6Concept = () => {
   return (
@@ -20,6 +21,11 @@ const ReactES6Concept = () => {
 
       <h2>4. ArrayMethods : </h2>
       <ArrayMethods />
+
+      <h2>5.1. DestructuringArray : </h2>
+      <DestructuringArray />
+      <h2>5.2 DestructuringObject : </h2>
+      <DestructuringObject />
     </>
   );
 };
