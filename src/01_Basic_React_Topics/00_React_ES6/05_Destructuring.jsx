@@ -1,5 +1,7 @@
 import React from "react";
 
+//DestructuringArray
+
 const DestructuringArray = () => {
   const vehicles = ["mustang", "f-150", "expedition"];
   // old way
@@ -31,6 +33,9 @@ const DestructuringArray = () => {
     </>
   );
 };
+
+//DestructuringObject
+
 const DestructuringObject = () => {
   return <></>;
 };
