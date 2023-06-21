@@ -21,6 +21,16 @@ const RestOperator = () => {
   console.log(fun1(1, 2, 3)); //6
   console.log(fun1(1, 2, 3, 4, 5)); //15
 
+  // rest with function and other arguments
+  function fun2(a, b, ...c) {
+    console.log(`${a} ${b}`); //Mukul Latiyan
+    console.log(c); //[ 'Lionel', 'Messi', 'Barcelona' ]
+    console.log(c[0]); //Lionel
+    console.log(c.length); //3
+    console.log(c.indexOf("Lionel")); //0
+  }
+  fun2("Mukul", "Latiyan", "Lionel", "Messi", "Barcelona");
+
   return <div></div>;
 };
 
