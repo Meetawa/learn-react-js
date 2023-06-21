@@ -4,6 +4,7 @@ import { ArrowFunction, ArrowFunctionWithProps } from "./02_ArrowFunction";
 import Variables from "./03_Variables";
 import ArrayMethods from "./04_Array Methods";
 import { DestructuringArray, DestructuringObject } from "./05_Destructuring";
+import SpreadOperator from "./06_SpreadOperator";
 
 const ReactES6Concept = () => {
   return (
@@ -25,8 +26,11 @@ const ReactES6Concept = () => {
       <h2>5.1. DestructuringArray : </h2>
       <DestructuringArray />
 
-      <h2>5.2 DestructuringObject : </h2>
+      <h2>5.2. DestructuringObject : </h2>
       <DestructuringObject />
+
+      <h2>6. SpreadOperator : </h2>
+      <SpreadOperator />
     </>
   );
 };
