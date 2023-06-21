@@ -24,6 +24,7 @@ const ReactES6Concept = () => {
 
       <h2>5.1. DestructuringArray : </h2>
       <DestructuringArray />
+
       <h2>5.2 DestructuringObject : </h2>
       <DestructuringObject />
     </>
