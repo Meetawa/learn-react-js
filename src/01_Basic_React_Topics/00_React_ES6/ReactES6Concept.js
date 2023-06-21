@@ -28,7 +28,8 @@ const ReactES6Concept = () => {
       <h2>6. SpreadOperator : </h2>
       <SpreadOperator />
       <h2>7. RestOperator : </h2>
-      <RestOperator />\<h2>7. TernaryOperator : </h2>
+      <RestOperator />
+      <h2>7. TernaryOperator : </h2>
       <TernaryOperator />
     </>
   );
