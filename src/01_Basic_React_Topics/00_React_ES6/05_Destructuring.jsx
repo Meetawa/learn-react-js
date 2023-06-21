@@ -8,7 +8,11 @@ const Destructuring = () => {
   const suv = vehicles[2];
 
   //With destructuring:
-  const [car1, truck1, suv1] = vehicles;
+  const vehicles1 = ["mustang", "f-150", "expedition"];
+
+  const [car1, truck1, suv1] = vehicles1;
+  console.log(vehicles);
+  console.log(vehicles1);
   return <div></div>;
 };
 
