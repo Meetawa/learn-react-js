@@ -1,7 +1,16 @@
 import React from "react";
 
 const SpreadOperator = () => {
-  return <div></div>;
+  const Array1 = [1, 2, 3];
+  const Array2 = [4, 5, 6];
+
+  const TotalArray = [...Array1, ...Array2];
+
+  return (
+    <>
+      <h2>Array Element is : {TotalArray}</h2>
+    </>
+  );
 };
 
 export default SpreadOperator;
