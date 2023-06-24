@@ -17,3 +17,12 @@
 ## Simplifying complex scenarios:
 
 - While creating components for complex scenarios such as data fetching and subscribing to events it is likely that all related code is not organized in one place are scattered among different life cycle methods. For example, actions like data, fetching are usually done in componentDidMount or componentDidUpdate, similarly, in case of event listeners, it is done in componentDidMount or componentWillUnmount. These develop a scenario where completely different codes like data fetching and event listeners end up in the same code-block. This also makes impossible to break components to smaller components because of stateful logic. Hooks solve these problems by rather than forcing a split based on life-cycle method Hooks to let you split one component into smaller functions based on what pieces are related.
+
+# Important things to remember while using hooks:
+
+- Hooks are available for React version 16.8 or higher.
+- Hooks are completely opt-in. Use it partially for a few components or base the whole project on it as per your needs without rewriting any existing code.
+- Hooks don’t contain any breaking changes and are 100% backward-compatible.
+- The react team has no plan to remove classes from React.
+- Hooks can’t be used inside class components and but the app can definitely mix class-based components and functional components with Hooks.
+- Hooks doesn’t violate any existing React concepts. Instead, Hooks provide a direct API to react concepts such as props, state, context, refs and life-cycle.
