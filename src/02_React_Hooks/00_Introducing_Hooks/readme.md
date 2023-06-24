@@ -1,6 +1,8 @@
 # React Hooks :
 
 - Hooks are a new addition in React 16.8. They let developers use state and other React features without writing a class For example- State of a component It is important to note that hooks are not used inside the classes.
+- we must import Hooks from react.
+- State generally refers to application data or properties that need to be tracked
 
 # Why the need for Hooks
 
@@ -26,3 +28,10 @@
 - The react team has no plan to remove classes from React.
 - Hooks can’t be used inside class components and but the app can definitely mix class-based components and functional components with Hooks.
 - Hooks doesn’t violate any existing React concepts. Instead, Hooks provide a direct API to react concepts such as props, state, context, refs and life-cycle.
+
+# Hook Rules
+
+- There are 3 rules for hooks:
+  - Hooks can only be called inside React function components.
+  - Hooks can only be called at the top level of a component.
+  - Hooks cannot be conditional
