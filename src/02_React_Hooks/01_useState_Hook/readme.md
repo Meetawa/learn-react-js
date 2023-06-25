@@ -9,7 +9,7 @@
 
 - To use the useState Hook, we first need to import it into our component.
 
-Example:Get your own React.js Server
+Example : Get your own React.js Server
 
 - At the top of your component, import the useState Hook.
 
@@ -18,3 +18,14 @@ import { useState } from "react";
 ```
 
 <mark>Notice</mark> that we are destructuring useState from react as it is a named export.
+
+## Declare state variable
+
+- Declaring a state variable is as simple as calling useState with some initial state value, like so: useState(initialStateValue).
+
+```
+const DeclareStateVar = () => {
+  const [count] = useState(100)
+  return <div> State variable is {count}</div>
+}
+```
