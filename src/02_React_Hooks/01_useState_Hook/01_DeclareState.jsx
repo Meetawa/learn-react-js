@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 const DeclareState = () => {
-  const [data] = useState(0);
-  return <div>User id is : {data}</div>;
+  const [color] = useState("red");
+  return <div>color name is : {color}</div>;
 };
 
 export default DeclareState;
