@@ -37,3 +37,5 @@
   - Hooks cannot be conditional
 
 <mark>Note:</mark> Hooks will not work in React class components,but its work in function component
+
+# Before we going to another topics first we need to understand Stateful vs. Stateless Components
