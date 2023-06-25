@@ -5,7 +5,8 @@ const UpdateState = () => {
   return (
     <div>
       color name is : {color}
-      <button onClick={() => setColor("green")}></button>
+      <br />
+      <button onClick={() => setColor("green")}>Click</button>
     </div>
   );
 };
