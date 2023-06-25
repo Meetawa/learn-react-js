@@ -29,3 +29,32 @@ const DeclareStateVar = () => {
   return <div> State variable is {count}</div>
 }
 ```
+
+- Updating a state variable is as simple as invoking the updater function returned by the useState invocation: const [stateValue, updaterFn] = useState(initialStateValue);.
+
+# Initialize useState
+
+- We initialize our state by calling useState in our function component.
+
+- useState accepts an initial state and returns two values:
+
+  - The current state.
+  - A function that updates the state.
+
+```
+import { useState } from "react";
+
+function FavoriteColor() {
+  const [color, setColor] = useState("");
+}
+```
+
+<mark>Notice</mark> that again, we are destructuring the returned values from useState.
+
+- The first value, color, is our current state.
+
+- The second value, setColor, is the function that is used to update our state.
+
+<mark>Note :</mark>These names are variables that can be named anything you would like.
+
+- Lastly, we set the initial state to an empty string: useState("")
