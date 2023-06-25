@@ -39,3 +39,29 @@
 <mark>Note:</mark> Hooks will not work in React class components,but its work in function component
 
 # Before we going to another topics first we need to understand Stateful vs. Stateless Components
+
+## Stateful vs. Stateless Components
+
+- Components in React can be stateful or stateless.
+
+  - A stateful component declares and manages local state in it.
+  - A stateless component is a pure function that doesn't have a local state and side-effects to manage.
+    A pure function is a function without any side-effects. This means that a function always returns the same output for the same input.
+
+If we take out the stateful and side-effects logic from a functional component, we have a stateless component. Also, the stateful and side-effects logic can be reusable elsewhere in the app. So it makes sense to isolate them from a component as much as possible.
+
+## Stateful component:
+
+- A component that manages the state in class-based with state or functional with useState.
+- In some component, the data keeps changing, for example, watching the cricket score etc.
+- In most of the cases, the class-based components extend react component.
+- Stateful components can use react life cycle hooks
+- In stateful components it good to use the this instance
+
+## Stateless component:
+
+- A component that has no internal state management in it.
+- In some component, the data remains the same, for example, showing the static data.
+- Function components are simply functions that receive the props and return the JSX code.
+- Stateless components can not use the react life cycle hooks
+- Here need not to use this instance, they just receive the props as an argument
