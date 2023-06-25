@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const DeclareState = () => {
+const UpdateState = () => {
   const [color, setColor] = useState("red");
   return (
     <div>
@@ -10,4 +10,4 @@ const DeclareState = () => {
   );
 };
 
-export default DeclareState;
+export default UpdateState;
