@@ -65,3 +65,17 @@ If we take out the stateful and side-effects logic from a functional component, 
 - Function components are simply functions that receive the props and return the JSX code.
 - Stateless components can not use the react life cycle hooks
 - Here need not to use this instance, they just receive the props as an argument
+
+# There are following Hooks:
+
+- useState
+- useEffect
+- useContext
+- useLayoutEffect
+- useReducer
+- useCallback
+- useMemo
+- useRef
+- useTransition
+- useDeferredValue
+- useId
