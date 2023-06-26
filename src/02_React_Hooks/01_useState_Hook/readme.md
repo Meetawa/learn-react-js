@@ -34,6 +34,8 @@ const DeclareStateVar = () => {
 
 # Initialize useState
 
+![Alt text](./UseState_hook_1.png)
+
 - We initialize our state by calling useState in our function component.
 
 - useState accepts an initial state and returns two values:
