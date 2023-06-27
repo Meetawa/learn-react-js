@@ -210,53 +210,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Car />);
 ```
 
-# Use object state variable
-
-- As opposed to strings and numbers, you could also use an object as the initial value passed to useState.
-
-<mark>Note</mark> that you have to pass the entire object to the useState updater function because the object is replaced, not merged.
-
-```
-// 🐢 setState (object merge) vs useState (object replace)
-// assume initial state is {name: "Ohans"}
-
-setState({ age: 'unknown' })
-// new state object will be
-// {name: "Ohans", age: "unknown"}
-
-useStateUpdater({ age: 'unknown' })
-// new state object will be
-// {age: "unknown"} - initial object is replaced
-```
-
-Example is :
-
-```
-const StateObject = () => {
-  const [state, setState] = useState({ age: 19, siblingsNum: 4 })
-  const handleClick = val =>
-    setState({
-      ...state,
-      [val]: state[val] + 1
-    })
-  const { age, siblingsNum } = state
-
-  return (
-    <div>
-      <p>Today I am {age} Years of Age</p>
-      <p>I have {siblingsNum} siblings</p>
-
-      <div>
-        <button onClick={handleClick.bind(null, 'age')}>Get older!</button>
-        <button onClick={handleClick.bind(null, 'siblingsNum')}>
-          More siblings!
-        </button>
-      </div>
-    </div>
-  )
-}
-```
-
 ## Updating Objects and Arrays in State
 
 - When state is updated, the entire state gets overwritten.
@@ -307,3 +260,50 @@ root.render(<Car />);
 - Because we need the current value of state, we pass a function into our setCar function. This function receives the previous value.
 
 - We then return an object, spreading the previousState and overwriting only the color.
+
+# Use object state variable
+
+- As opposed to strings and numbers, you could also use an object as the initial value passed to useState.
+
+<mark>Note</mark> that you have to pass the entire object to the useState updater function because the object is replaced, not merged.
+
+```
+// 🐢 setState (object merge) vs useState (object replace)
+// assume initial state is {name: "Ohans"}
+
+setState({ age: 'unknown' })
+// new state object will be
+// {name: "Ohans", age: "unknown"}
+
+useStateUpdater({ age: 'unknown' })
+// new state object will be
+// {age: "unknown"} - initial object is replaced
+```
+
+Example is :
+
+```
+const StateObject = () => {
+  const [state, setState] = useState({ age: 19, siblingsNum: 4 })
+  const handleClick = val =>
+    setState({
+      ...state,
+      [val]: state[val] + 1
+    })
+  const { age, siblingsNum } = state
+
+  return (
+    <div>
+      <p>Today I am {age} Years of Age</p>
+      <p>I have {siblingsNum} siblings</p>
+
+      <div>
+        <button onClick={handleClick.bind(null, 'age')}>Get older!</button>
+        <button onClick={handleClick.bind(null, 'siblingsNum')}>
+          More siblings!
+        </button>
+      </div>
+    </div>
+  )
+}
+```
